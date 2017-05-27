@@ -1,0 +1,7 @@
+sanjua.content:
+  path: '/admin/settings'
+  defaults:
+    _controller: 'Drupal\sanjua\Controller\SanjuaController::content'
+    _title: 'Page Title custom'
+  requirements:
+    _permission: 'access content'
