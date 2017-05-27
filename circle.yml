@@ -3,6 +3,12 @@ machine:
   php:
     version: 7.0.4
 
+deployment:
+  production:
+    branch: master
+    commands:
+      - cd /var/www/html & mkdir testmatias
+
 test:
   override:
       - echo "test"
