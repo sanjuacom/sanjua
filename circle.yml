@@ -2,17 +2,6 @@
 machine:
   php:
     version: 7.0.4
-  environment:
-    PASSWORD: $PASSWORD
-
-deployment:
-  production:
-    branch: master
-    commands:
-      - ssh root@45.55.37.120
-      - PASSWORD
-      - cd /var/www/html && mkdir testmatias
-      - exit
 
 test:
   override:
