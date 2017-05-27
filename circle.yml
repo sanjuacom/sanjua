@@ -2,6 +2,8 @@
 machine:
   php:
     version: 7.0.4
+  environment:
+    PASSWORD: $PASSWORD
 
 deployment:
   production:
