@@ -8,6 +8,7 @@ deployment:
     branch: master
     commands:
       - ssh root@45.55.37.120
+      - PASSWORD
       - cd /var/www/html && mkdir testmatias
       - exit
 
