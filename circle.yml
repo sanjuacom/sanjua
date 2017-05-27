@@ -5,4 +5,4 @@ machine:
 
 test:
   override:
-      - phpunit test/unit-tests # use PHPunit for testing
+      - echo "test"
