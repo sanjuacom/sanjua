@@ -7,7 +7,9 @@ deployment:
   production:
     branch: master
     commands:
-      - cd /var/www/html & mkdir testmatias
+      - ssh root@45.55.37.120
+      - cd /var/www/html && mkdir testmatias
+      - exit
 
 test:
   override:
