@@ -5,3 +5,8 @@
  *
  * Place your custom PHP code in this file.
  */
+
+
+function base_preprocess_page(&$variables) {
+  $variables['logo'] = theme_get_setting('logo.url');
+}

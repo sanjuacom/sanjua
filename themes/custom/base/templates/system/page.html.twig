@@ -103,13 +103,12 @@
     <div class="row">
 
       {# Header #}
-      {% if page.header %}
-        {% block header %}
-          <div class="col-sm-12" role="heading">
-              {{ page.header }}
+      <div class="col-sm-12" role="heading">
+          <div id="logo">
+              <a href="/"><img src="{{ logo }}"></a>
           </div>
-        {% endblock %}
-      {% endif %}
+          {{ page.header }}
+      </div>
 
       {# Sidebar First #}
       {% if page.sidebar_first %}
