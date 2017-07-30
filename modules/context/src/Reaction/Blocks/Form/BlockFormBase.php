@@ -178,7 +178,12 @@ abstract class BlockFormBase extends FormBase {
 
     $form['#tree'] = TRUE;
 
-    $form['settings'] = $this->block->buildConfigurationForm([], $form_state);
+    if ($block_id != 'system_branding_block') {
+      $form['settings'] = $this->block->buildConfigurationForm([], $form_state);
+    }
+    else {
+      $form['settings'] = array();
+    }
 
     $form['settings']['id'] = [
       '#type' => 'value',
