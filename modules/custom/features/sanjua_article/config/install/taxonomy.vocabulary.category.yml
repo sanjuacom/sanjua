@@ -1,0 +1,8 @@
+langcode: es
+status: true
+dependencies: {  }
+name: Categoría
+vid: category
+description: ''
+hierarchy: 0
+weight: 0

@@ -1,0 +1,16 @@
+name: Page
+description: 'Provides Page content type and related configuration. '
+type: module
+core: 8.x
+dependencies:
+  - ds
+  - entity_reference_revisions
+  - field
+  - language
+  - menu_ui
+  - node
+  - paragraphs
+  - path
+  - text
+  - user
+package: Sanjua

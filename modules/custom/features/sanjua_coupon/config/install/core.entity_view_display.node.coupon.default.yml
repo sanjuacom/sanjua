@@ -1,0 +1,26 @@
+langcode: es
+status: true
+dependencies:
+  config:
+    - field.field.node.coupon.body
+    - node.type.coupon
+  module:
+    - text
+    - user
+id: node.coupon.default
+targetEntityType: node
+bundle: coupon
+mode: default
+content:
+  body:
+    label: hidden
+    type: text_default
+    weight: 101
+    settings: {  }
+    third_party_settings: {  }
+    region: content
+  links:
+    weight: 100
+    region: content
+hidden:
+  langcode: true

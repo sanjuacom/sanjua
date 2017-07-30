@@ -1,0 +1,6 @@
+name: Seo
+type: module
+core: 8.x
+dependencies:
+  - metatag
+package: Sanjua

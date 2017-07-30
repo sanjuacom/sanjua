@@ -1,0 +1,28 @@
+langcode: es
+status: true
+dependencies:
+  config:
+    - field.field.node.section.field_premium
+    - node.type.section
+  module:
+    - user
+id: node.section.default
+targetEntityType: node
+bundle: section
+mode: default
+content:
+  field_premium:
+    weight: 101
+    label: above
+    settings:
+      format: default
+      format_custom_false: ''
+      format_custom_true: ''
+    third_party_settings: {  }
+    type: boolean
+    region: content
+  links:
+    weight: 100
+    region: content
+hidden:
+  langcode: true
