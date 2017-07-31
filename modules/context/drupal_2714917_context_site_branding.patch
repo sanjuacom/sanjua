@@ -1,0 +1,16 @@
+--- src/Reaction/Blocks/Form/BlockFormBase.php	2016-06-06 23:19:21.000000000 -0400
++++ src/Reaction/Blocks/Form/BlockFormBase.php	2016-06-06 23:19:34.000000000 -0400
+@@ -178,7 +178,12 @@
+
+     $form['#tree'] = TRUE;
+
+-    $form['settings'] = $this->block->buildConfigurationForm([], $form_state);
++    if ($block_id != 'system_branding_block') {
++      $form['settings'] = $this->block->buildConfigurationForm([], $form_state);
++    }
++    else {
++      $form['settings'] = array();
++    }
+
+     $form['settings']['id'] = [
+       '#type' => 'value',

@@ -1,0 +1,17 @@
+langcode: es
+status: true
+dependencies:
+  config:
+    - node.type.coupon
+id: node.coupon.title
+field_name: title
+entity_type: node
+bundle: coupon
+label: Titulo
+description: ''
+required: true
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: string

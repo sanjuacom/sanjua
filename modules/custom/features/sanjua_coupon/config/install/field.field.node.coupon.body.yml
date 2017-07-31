@@ -1,0 +1,21 @@
+langcode: es
+status: true
+dependencies:
+  config:
+    - field.storage.node.body
+    - node.type.coupon
+  module:
+    - text
+id: node.coupon.body
+field_name: body
+entity_type: node
+bundle: coupon
+label: Cuerpo
+description: ''
+required: false
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings:
+  display_summary: false
+field_type: text_with_summary

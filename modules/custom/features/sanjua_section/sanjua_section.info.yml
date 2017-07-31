@@ -1,0 +1,13 @@
+name: Section
+type: module
+core: 8.x
+dependencies:
+  - field
+  - field_group
+  - language
+  - menu_ui
+  - node
+  - path
+  - pathauto
+  - user
+package: Sanjua

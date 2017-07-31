@@ -1,0 +1,28 @@
+langcode: es
+status: true
+dependencies:
+  config:
+    - core.entity_view_mode.node.teaser
+    - field.field.node.coupon.body
+    - node.type.coupon
+  module:
+    - text
+    - user
+id: node.coupon.teaser
+targetEntityType: node
+bundle: coupon
+mode: teaser
+content:
+  body:
+    label: hidden
+    type: text_summary_or_trimmed
+    weight: 101
+    settings:
+      trim_length: 600
+    third_party_settings: {  }
+    region: content
+  links:
+    weight: 100
+    region: content
+hidden:
+  langcode: true

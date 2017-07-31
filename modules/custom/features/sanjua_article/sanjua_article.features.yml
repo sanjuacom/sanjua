@@ -1,0 +1,4 @@
+bundle: sanjua
+excluded:
+  - paragraphs.paragraphs_type.three_columns
+required: true
